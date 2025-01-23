@@ -1,0 +1,39 @@
+html {
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------      --------- */
+/* ---------- HEAD --------- */
+/* ----------      --------- */
+
+/* ----------      --------- */
+/* ---------- MAIN --------- */
+/* ----------      --------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------        --------- */
+/* ---------- FOOTER --------- */
+/* ----------        --------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+}
+
+footer p {
+    font-size: 1rem;
+}
