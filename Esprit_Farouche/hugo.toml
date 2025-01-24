@@ -8,3 +8,13 @@ enableEmoji = true
       [markup.goldmark.parser.attribute]
         block = true
         title = true
+
+[menus]
+  [[menus.header]]
+    name = 'Accueil'
+    url = '/'
+    weight = 10
+  [[menus.header]]
+    name = 'Contact'
+    url = '/contact'
+    weight = 20
