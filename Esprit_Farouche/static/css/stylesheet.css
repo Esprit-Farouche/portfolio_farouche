@@ -3,6 +3,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F9F9F9;
+}
+body {
+    background-color: #F9F9F9;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 
@@ -18,24 +24,32 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
-
 p.btn a {
-    position: relative;
-    background-color: salmon;
-    color: rgb(24, 24, 24);
+    width: 100%;
+    height: 100%;
     padding: 8px 32px 8px 32px;
-    border-radius: 200px;
+    color: rgb(24, 24, 24);
     font-weight: 500;
     text-decoration: none;
+    background-color: salmon;
+    border-radius: 200px;
+    transition: all 300ms ease;
+}
+p.btn {
+    position: relative;
     transition: all 300ms ease;
     box-shadow: rgba(50, 50, 93, .25) 0 13px 27px -5px, rgba(0, 0, 0, .3) 0 8px 16px -8px;
 }
-p.btn a:hover {
+p.btn:hover {
     transform: translateY(-5px);
-    background-color: rgb(228, 117, 105);
     box-shadow: 0 20px 50px -10px rgb(14, 14, 14);
 }
+p.btn:hover a{
+    background-color: rgb(211, 107, 95);
+}
+
 /* ----------        --------- */
 /* ---------- FOOTER --------- */
 /* ----------        --------- */
@@ -49,6 +63,7 @@ footer {
     left: 0;
     width: 100vw;
     height: 100px;
+    z-index: -1
 }
 
 footer p {
