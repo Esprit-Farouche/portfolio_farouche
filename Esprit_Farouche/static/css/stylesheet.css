@@ -1,3 +1,56 @@
+@font-face {
+    font-family: 'Nyght-Light';
+    src: url(../fonts/nyght/NyghtSerif-LightItalic.woff2);
+    font-weight: 400;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html {
     font-family: Inter;
     display: flex;
@@ -9,12 +62,25 @@ body {
     background-color: #F9F9F9;
     width: 100%;
     margin-bottom: 100px;
+    padding: 16px;
 }
 
+p {
+    font-family: 'Inter';
+    font-size: 1em;
+}
 
 /* ----------      --------- */
 /* ---------- HEAD --------- */
 /* ----------      --------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    z-index: 20;
+}
 nav ul {
     display: inline-flex;
     justify-content: space-between;
@@ -22,9 +88,35 @@ nav ul {
     list-style: none;
     padding: 0;
     & li {
-        padding: 0px 16px 0px 16px;
+        padding: 16px 16px 16px 16px;
+        & a {
+            color: #FFF;
+            mix-blend-mode: difference;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 5px;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 0%;
+                background-color: #FFF;
+                mix-blend-mode: difference;
+                transition: width 0.2s ease-in-out;
+                bottom: 0;
+                right: 0;
+                left: auto;
+            }
+            &:hover::before {
+                width: 100%;
+                right: auto;
+                left: 0
+            }
+        }
     }
 }
+
+
 /* ----------      --------- */
 /* ---------- MAIN --------- */
 /* ----------      --------- */
@@ -33,16 +125,89 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
 }
-p.btn a {
+
+section#hero {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: auto;
+    height: calc(100vh - 32px);
+    background-image: url('../assets/bg-home.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    mix-blend-mode: difference;
+    font-size: 12em;
+    line-height: 0.8;
+    padding-top: 60px;
+}
+h1 span.esprit {
+    font-family: 'Inter';
+}
+h1 span.farouche {
+    font-family: 'Nyght-Light';
+}
+
+div.inner-hero {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: nowrap;
+    & div:first-of-type {
+        width: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        & p {
+            width: 50%;
+            color: #FFF;
+        }
+    }
+    & div:last-of-type {
+        width: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        & p {
+            width: 50%;
+            text-align: right;
+            color: #FFF;
+        }
+    }
+}
+
+/* Section desc */
+section#desc {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 16px;
+    & img {
+        width: 33%;
+    }
+    & div {
+        width: 66%;
+    }
+}
+
+
+/* button.btn a {
     width: 100%;
     height: 100%;
     padding: 8px 32px 8px 32px;
-    color: rgb(24, 24, 24);
+    color: #FFF;
     font-weight: 500;
     text-decoration: none;
-    background-color: salmon;
+    background-color: #000;
     border-radius: 200px;
     transition: all 300ms ease;
 }
@@ -57,7 +222,7 @@ p.btn:hover {
 }
 p.btn:hover a{
     background-color: rgb(211, 107, 95);
-}
+} */
 
 /* ----------        --------- */
 /* ---------- FOOTER --------- */
@@ -66,7 +231,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: bisque;
+    background-color: #000;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -77,4 +242,5 @@ footer {
 
 footer p {
     font-size: 1rem;
+    color: #FFF;
 }
