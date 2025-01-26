@@ -64,7 +64,6 @@ body {
     margin-bottom: 100px;
     padding: 16px;
 }
-
 p {
     font-family: 'Inter';
     font-size: 1em;
@@ -77,9 +76,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     z-index: 20;
+}
+header nav {
+    max-width: 100%;
+    width: auto;
+    padding: 16px;
 }
 nav ul {
     display: inline-flex;
@@ -95,6 +98,7 @@ nav ul {
             text-decoration: none;
             position: relative;
             padding-bottom: 5px;
+            text-transform: uppercase;
             &::before {
                 content: "";
                 position: absolute;
@@ -120,19 +124,19 @@ nav ul {
 /* ----------      --------- */
 /* ---------- MAIN --------- */
 /* ----------      --------- */
-main {
+/* main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 section#hero {
     display: flex;
     align-items: stretch;
     justify-content: center;
     width: auto;
-    height: calc(100vh - 32px);
+    height: calc(100vh - 64px);
     background-image: url('../assets/bg-home.jpg');
     background-size: cover;
     background-position: center;
