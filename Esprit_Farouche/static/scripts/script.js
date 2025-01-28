@@ -1,3 +1,5 @@
+
+// -------------  LENIS SCROLL
 // Initialize Lenis
 const lenis = new Lenis();
 
@@ -8,3 +10,5 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+// ------------------
