@@ -3,6 +3,12 @@
     src: url(../fonts/nyght/NyghtSerif-LightItalic.woff2);
     font-weight: 400;
 }
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../fonts/satoshi/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +58,7 @@ table {
 }
 
 html {
-    font-family: Inter;
+    font-family: Satoshi;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +71,7 @@ body {
     padding: 16px;
 }
 p {
-    font-family: 'Inter';
+    font-family: 'Satoshi';
     font-size: 1em;
 }
 
