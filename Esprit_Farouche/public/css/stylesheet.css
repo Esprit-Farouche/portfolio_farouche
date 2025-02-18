@@ -156,7 +156,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     color: #FFF;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     font-size: 16em;
     line-height: 0.8;
     padding-top: 60px;
