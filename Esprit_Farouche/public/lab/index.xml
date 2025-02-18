@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Labs on My New Hugo Site</title>
-    <link>http://localhost:55925/lab/</link>
+    <link>http://localhost:49986/lab/</link>
     <description>Recent content in Labs on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:55925/lab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49986/lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page d&#39;accueil</title>
-      <link>http://localhost:55925/lab/</link>
+      <link>http://localhost:49986/lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55925/lab/</guid>
+      <guid>http://localhost:49986/lab/</guid>
       <description>&lt;h1 id=&#34;bienvenue-au-labo--fallen_leaf&#34;&gt;Bienvenue au labo ! &amp;#x1f342;&lt;/h1&gt;</description>
     </item>
   </channel>
