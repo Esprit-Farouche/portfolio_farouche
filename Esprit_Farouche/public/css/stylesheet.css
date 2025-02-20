@@ -143,7 +143,7 @@ section#hero {
     justify-content: center;
     width: auto;
     height: calc(100vh - 64px);
-    background-image: url('../assets/phoque.jpg');
+    background-image: url('../assets/neil-cooper-uwI8R_FyLrI-unsplash.jpg');
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
@@ -156,7 +156,6 @@ h1 {
     justify-content: center;
     flex-direction: column;
     color: #FFF;
-    /* mix-blend-mode: difference; */
     font-size: 16em;
     line-height: 0.8;
     padding-top: 60px;
