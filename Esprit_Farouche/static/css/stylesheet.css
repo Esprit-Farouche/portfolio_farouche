@@ -1,3 +1,70 @@
+@view-transition {
+    navigation: auto;
+}
+div.overlay-lines > div {
+    view-transition-name: content;
+}
+::view-transition-old(content) {
+    animation: wrapping 0.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+::view-transition-new(content) {
+    animation: wrapping 0.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(calc(50% * 1));
+    }
+}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(calc(-50% * 1));
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes wrapping {
+    from {
+        transform: scaleX(0);
+    }
+    from {
+        transform: scaleX(1);
+    }
+}
+
+div.overlay-lines {
+    display: flex;
+    height: 100dvh;
+    pointer-events: none;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    & div {
+        transform: scaleX(0);
+        background-color: #000;
+        transform-origin: left center;
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+
+
 @font-face {
     font-family: 'Nyght-Light';
     src: url(../fonts/nyght/NyghtSerif-LightItalic.woff2);
@@ -58,7 +125,7 @@ table {
 }
 
 html {
-    font-family: Satoshi;
+    font-family: Inter;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +138,7 @@ body {
     padding: 16px;
 }
 p {
-    font-family: 'Satoshi';
+    font-family: 'Inter';
     font-size: 1em;
 }
 
@@ -98,7 +165,7 @@ nav ul {
     padding: 0;
     & li {
         padding: 16px 16px 16px 16px;
-        & a {
+        & a { 
             color: #FFF;
             mix-blend-mode: difference;
             text-decoration: none;
@@ -143,7 +210,7 @@ section#hero {
     justify-content: center;
     width: auto;
     height: calc(100vh - 64px);
-    background-image: url('../assets/bg-home.jpg');
+    background-image: url('../assets/bg-home2.png');
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
@@ -156,12 +223,12 @@ h1 {
     justify-content: center;
     flex-direction: row;
     color: #FFF;
-    font-size: 16em;
+    font-size: 12em;
     line-height: 1.2em;
     overflow: hidden;
 }
 h1 span.esprit {
-    font-family: 'Satoshi';
+    font-family: 'Inter';
     animation: appear-title 0.8s cubic-bezier(.26,.78,.25,.8) 0.3s forwards;
     transform: translateY(100%);
 }
