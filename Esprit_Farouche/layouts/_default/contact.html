@@ -1,8 +1,10 @@
 {{ define "main" }}
     {{ .Content }}
+<div data-barba="container" data-barba-namespace="contact-page"></div>
     <form action="#">
         <input type="text" value="Votre message">
         <input type="submit" value="Envoyer">
     </form>
     <a class="btn" href='/'>Retour à l'accueil</a>
+</div>
 {{ end }}

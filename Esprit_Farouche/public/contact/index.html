@@ -1,6 +1,6 @@
 <html lang="en">
 
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59006&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page d&#39;accueil</title>
 <link rel="stylesheet" href="/css/stylesheet.css">
@@ -8,9 +8,15 @@
 <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 </style>
 <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+<script>src="https://code.jquery.com/jquery-3.7.1.min.js"</script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 <script type="text/javascript" src="/scripts/script.js"></script>
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
     <header>
       <nav>
     <ul>
@@ -39,11 +45,13 @@
     <h1 id="discutons-ensemble-fallen_leaf">Discutons ensemble &#x1f342;</h1>
 <p>Je suis à votre écoute pour réaliser votre projet !</p>
 
+<div data-barba="container" data-barba-namespace="contact-page"></div>
     <form action="#">
         <input type="text" value="Votre message">
         <input type="submit" value="Envoyer">
     </form>
     <a class="btn" href='/'>Retour à l'accueil</a>
+</div>
 
     </main>
     <footer>

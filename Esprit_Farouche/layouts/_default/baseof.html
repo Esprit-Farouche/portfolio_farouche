@@ -3,7 +3,10 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
     <header>
       {{ partial "nav.html" . }}
     </header>
