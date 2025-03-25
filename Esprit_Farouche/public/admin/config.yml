@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: COMPTE GITHUB/REPO # C'est le nom de votre répertoire github
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: Template_Portfolio/static/media
+public_folder: /media
+
+
+collections:
+  - name: 'Projets'
+    label: 'Projets'
+    label_singular: 'Projet'
+    folder: '/Template_Portfolio/content/projets' # Le chemin depuis la racine du site, à adapter selon votre projet
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
+    slug: '{{day}}-{{month}}-{{year}}-{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime', date_format: "DD.MM.YYYY", time_format: "HH:mm"}
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Type', name: "type", widget: 'string'}
+      - { label: 'Contenu', name: 'body', widget: 'markdown' }
