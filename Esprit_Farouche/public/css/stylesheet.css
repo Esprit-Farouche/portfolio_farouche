@@ -1,78 +1,46 @@
-/* @view-transition {
-    navigation: auto;
-} */
-div.overlay-lines > div {
-    view-transition-name: content;
-}
-::view-transition-old(content) {
-    animation: wrapping 0.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
-}
-::view-transition-new(content) {
-    animation: wrapping 0.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
-}
-@keyframes slide-out {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(calc(50% * 1));
-    }
-}
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateX(calc(-50% * 1));
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
+/* ----------      --------- */
+/* ---------- PROJETS --------- */
+/* ----------      --------- */
+main {
+    max-width: 1920px;
 }
 
-@keyframes wrapping {
-    from {
-        transform: scaleX(0);
-    }
-    from {
-        transform: scaleX(1);
-    }
-}
 
-div.overlay-lines {
+section.list-project {
+    align-items: flex-start;
+    height: 28em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
     display: flex;
-    height: 100dvh;
-    pointer-events: none;
-    width: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+}
 
-    & div {
-        transform: scaleX(0);
-        background-color: #000;
-        transform-origin: left center;
-        width: 20%;
+div.text-project {
+    width: 40%;
+}
+div.img-project {
+    width: 60%;
+    margin-left: auto;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
 
-
-
-
-
-
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
 
 @font-face {
     font-family: 'Nyght-Light';
     src: url(../fonts/nyght/NyghtSerif-LightItalic.woff2);
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Satoshi';
-    src: url(../fonts/satoshi/Satoshi-Regular.woff2);
     font-weight: 400;
 }
 
@@ -99,6 +67,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: InterVariable, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -125,7 +94,6 @@ table {
 }
 
 html {
-    font-family: Inter;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +106,6 @@ body {
     padding: 16px;
 }
 p {
-    font-family: 'Inter';
     font-size: 1em;
 }
 
@@ -290,30 +257,6 @@ section#desc {
     }
 }
 
-
-/* button.btn a {
-    width: 100%;
-    height: 100%;
-    padding: 8px 32px 8px 32px;
-    color: #FFF;
-    font-weight: 500;
-    text-decoration: none;
-    background-color: #000;
-    border-radius: 200px;
-    transition: all 300ms ease;
-}
-p.btn {
-    position: relative;
-    transition: all 300ms ease;
-    box-shadow: rgba(50, 50, 93, .25) 0 13px 27px -5px, rgba(0, 0, 0, .3) 0 8px 16px -8px;
-}
-p.btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 50px -10px rgb(14, 14, 14);
-}
-p.btn:hover a{
-    background-color: rgb(211, 107, 95);
-} */
 
 /* ----------        --------- */
 /* ---------- FOOTER --------- */
