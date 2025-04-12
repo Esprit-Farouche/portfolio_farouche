@@ -5,7 +5,6 @@ main {
     max-width: 1920px;
 }
 
-
 section.list-project {
     align-items: flex-start;
     height: 28em;
@@ -18,6 +17,7 @@ section.list-project {
 div.text-project {
     width: 40%;
 }
+
 div.img-project {
     width: 60%;
     margin-left: auto;
@@ -28,7 +28,6 @@ div.img-project {
         object-fit: cover;
     }
 }
-
 
 :root {
     font-family: Inter, sans-serif;
@@ -118,6 +117,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 20;
+    mix-blend-mode: difference;
+}
+html.page-accueil header {
+    mix-blend-mode: normal;
 }
 header nav {
     max-width: 100%;
@@ -183,8 +186,7 @@ section#hero {
     flex-wrap: wrap;
     padding: 16px;
 }
-
-h1 {
+html.page-accueil h1 {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -193,6 +195,15 @@ h1 {
     font-size: 12em;
     line-height: 1.2em;
     overflow: hidden;
+}
+h1 {
+    display: inline-block;
+    text-align: left;
+    color: #000;
+    font-size: 8em;
+    line-height: 1.2em;
+    overflow: hidden;
+    padding-top: 24px;
 }
 h1 span.esprit {
     font-family: 'Inter';
@@ -256,7 +267,6 @@ section#desc {
         width: 66%;
     }
 }
-
 
 /* ----------        --------- */
 /* ---------- FOOTER --------- */
