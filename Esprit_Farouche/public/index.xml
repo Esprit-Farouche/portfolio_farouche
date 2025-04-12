@@ -8,6 +8,20 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>DnD</title>
+      <link>http://localhost:1313/projets/projet1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projets/projet1/</guid>
+      <description>&lt;section&gt;Couille&lt;/section&gt;</description>
+    </item>
+    <item>
+      <title>Karpentr Brut</title>
+      <link>http://localhost:1313/projets/projet2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projets/projet2/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Page d&#39;accueil</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -20,13 +34,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/lab/</guid>
       <description>&lt;h1 id=&#34;bienvenue-au-labo--fallen_leaf&#34;&gt;Bienvenue au labo ! &amp;#x1f342;&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>Page d&#39;accueil</title>
-      <link>http://localhost:1313/projets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projets/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

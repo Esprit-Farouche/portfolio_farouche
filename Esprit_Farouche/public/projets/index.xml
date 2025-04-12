@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projets on My New Hugo Site</title>
+    <title>Mes Projets on My New Hugo Site</title>
     <link>http://localhost:1313/projets/</link>
-    <description>Recent content in Projets on My New Hugo Site</description>
+    <description>Recent content in Mes Projets on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/projets/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Page d&#39;accueil</title>
-      <link>http://localhost:1313/projets/</link>
+      <title>DnD</title>
+      <link>http://localhost:1313/projets/projet1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projets/</guid>
+      <guid>http://localhost:1313/projets/projet1/</guid>
+      <description>&lt;section&gt;Couille&lt;/section&gt;</description>
+    </item>
+    <item>
+      <title>Karpentr Brut</title>
+      <link>http://localhost:1313/projets/projet2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projets/projet2/</guid>
       <description></description>
     </item>
   </channel>
