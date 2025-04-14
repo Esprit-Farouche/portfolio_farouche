@@ -5,29 +5,7 @@ main {
     max-width: 1920px;
 }
 
-section.list-project {
-    align-items: flex-start;
-    height: 28em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    display: flex;
-}
 
-div.text-project {
-    width: 40%;
-}
-
-div.img-project {
-    width: 60%;
-    margin-left: auto;
-
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
 
 :root {
     font-family: Inter, sans-serif;
@@ -163,6 +141,10 @@ nav ul {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* ----------      --------- */
 /* ---------- MAIN --------- */
@@ -203,7 +185,7 @@ h1 {
     font-size: 8em;
     line-height: 1.2em;
     overflow: hidden;
-    padding-top: 24px;
+    padding-top: 100px;
 }
 h1 span.esprit {
     font-family: 'Inter';
@@ -225,6 +207,16 @@ h1 span.farouche {
         transform: translateY(0%);
         opacity: 1;
     }
+}
+
+
+h2 {
+    font-size: 4em;
+    color: #000;
+}
+
+h2 span.special-word {
+    font-family: 'Nyght-Light';
 }
 
 div.inner-hero {
@@ -265,6 +257,71 @@ section#desc {
     }
     & div {
         width: 66%;
+    }
+}
+
+
+/* ----------        --------- */
+/* ---------- Page Projets --------- */
+/* ----------        --------- */
+
+div.separator {
+    border-top: 2px solid #000;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+span.date-project {
+    text-decoration: none;
+    color:#000;
+    font-size: 1em;
+    position: relative;
+    font-weight: 700;
+
+    &::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 100%;
+        background-color: #000;
+        width: 10px;
+        aspect-ratio: 1/1;
+        margin-right: 8px;
+    }
+}
+
+section.list-project {
+    align-items: flex-start;
+    height: 75vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+
+div.text-project {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    grid-column: span 6 / span 6;
+}
+
+div.img-project {
+    width: 60%;
+    margin-left: auto;
+    grid-column: span 7 / span 7;
+    grid-column-start: 6;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
